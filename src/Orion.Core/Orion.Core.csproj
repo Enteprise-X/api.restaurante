@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Orion.Core</RootNamespace>
+  </PropertyGroup>
+</Project>
