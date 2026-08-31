@@ -17,7 +17,7 @@ Não duplica `usuarios`. O JWT é o **mesmo** emitido pelo oAuth (via Gateway).
 | Peça | Valor |
 |------|--------|
 | Sistema (`core.sistemas.codigo`) | `ORI` |
-| Módulo raiz | `ORI0000000` |
+| Módulo de segurança | `ORION000000` (legado `ORI0000000`) |
 | Gateway | `/api/restaurante/**` |
 | Eureka / service id | `restaurante` |
 | Porta local | `8091` |
@@ -56,10 +56,10 @@ Authorization: Bearer <access_token>
 X-Secret-Token: <FRONTEND_SECRET_TOKEN>
 ```
 
-Sem o módulo `ORI0000000` no JWT → **403**.
+Sem o módulo `ORION000000` (ou legado `ORI0000000`) no JWT → **403**.
 
 ## O que NÃO fazer
 
 - Novo login / tabela de usuários
 - Chamar Core `:8081` do browser
-- Inventar códigos de módulo fora de `ORI*`
+- Inventar códigos de módulo fora de `ORION*` / `ORI*`

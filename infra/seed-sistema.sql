@@ -15,7 +15,8 @@ INSERT INTO core.modulos (nome, descricao, codigo, url, ordem, ativo, data_criac
 SELECT v.nome, v.descricao, v.codigo, v.url, v.ordem, true, NOW(), s.id
 FROM s
 CROSS JOIN (VALUES
-  ('Inicio Orion', 'Modulo raiz do Orion (restaurante)', 'ORI0000000', '/inicio', 0),
+  ('Orion', 'Modulo de segurança / entrada no Orion', 'ORION000000', '/inicio', 0),
+  ('Inicio Orion', 'Modulo raiz legado (ORI0000000)', 'ORI0000000', '/inicio', 0),
   ('Cardapio', 'Cardapio e itens', 'ORI0000001', '/cardapio', 1),
   ('Pedidos', 'Pedidos e comandas', 'ORI0000002', '/pedidos', 2),
   ('Mesas', 'Mesas e salao do restaurante', 'ORI0000003', '/mesas', 3)
